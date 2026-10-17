@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f4ec">
+  <meta name="description" content="سفرة ولمة — أكل بيتي مصري طازة، معمول بحب ويوصلك لحد بابك.">
+  <title>سفرة ولمة | أكل بيتي معمول بحب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="سفرة ولمة - الرئيسية">
+        <span class="brand-mark" aria-hidden="true">س</span>
+        <span class="brand-copy"><strong>سفرة ولمة</strong><small>أكل بيتي معمول بحب</small></span>
+      </a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#menu">المنيو</a>
+        <a href="#story">حكايتنا</a>
+        <a href="#contact">تواصل معانا</a>
+      </nav>
+      <a class="header-order" href="#menu">اطلب دلوقتي <span aria-hidden="true">←</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shape hero-shape-one" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape-two" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> من مطبخنا لسفرتك</span>
+          <h1>ريحة البيت<br>في <span>كل لقمة.</span></h1>
+          <p>أكل مصري أصيل، مكونات طازة، وطعم معمول على أصوله. اختار أكلك وإحنا نوصّله لحد عندك.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">اكتشف المنيو <span aria-hidden="true">←</span></a>
+            <div class="delivery-note"><span class="delivery-icon" aria-hidden="true">◷</span><span><strong>يوصلك سخن</strong><small>خلال ٣٠–٤٥ دقيقة</small></span></div>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>م</span><span>ن</span><span>س</span><span>+</span></div>
+            <span><strong>٤٫٩</strong> من أكتر من ١٢٠٠ رأي سعيد</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1100&q=85" alt="طبق طعام بيتي شهي على مائدة دافئة" fetchpriority="high">
+            <div class="image-sticker"><span aria-hidden="true">✦</span><strong>طازة كل يوم</strong><small>من مطبخنا ليك</small></div>
+          </div>
+          <div class="floating-rating"><span class="rating-star" aria-hidden="true">★</span><span><strong>طعم يفرّح</strong><small>زي أكل ماما بالظبط</small></span></div>
+          <span class="hero-doodle" aria-hidden="true">✳</span>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>أكل بيتي، من القلب للقلب</span><span class="hero-bottom-line"></span><span>القاهرة · بنوصّل لحد بابك</span>
+      </div>
+    </section>
+
+    <section class="menu-section section-space" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">اختار اللي على مزاجك</span><h2>منيو يفتح النفس <span>😋</span></h2><p>كل أطباقنا بتحضر يوم بيوم بمكونات طازة.</p></div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="menu-search" type="search" placeholder="بتدور على إيه؟" aria-label="ابحث في المنيو"></label>
+        </div>
+        <div class="menu-toolbar">
+          <div class="category-list" id="category-list" aria-label="تصنيفات المنيو"></div>
+          <span class="menu-fresh"><span aria-hidden="true">✦</span> طازة ومتحضرة مخصوص ليك</span>
+        </div>
+        <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>مفيش أصناف مطابقة للبحث. جرّب كلمة تانية.</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="container story-inner">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=85" alt="تحضير الطعام الطازج في مطبخ دافئ" loading="lazy">
+          <span class="story-stamp">من ٢٠١٨<br><strong>بكل حب</strong></span>
+        </div>
+        <div class="story-copy">
+          <span class="eyebrow">حكايتنا بدأت من سفرة</span>
+          <h2>أكل بيلمّنا<br><span>على الحلوة والمُرّة.</span></h2>
+          <p>بدأنا بحلم بسيط: إن طعم الأكل البيتي يفضل قريب منك، حتى لو يومك مشغول. كل وصفة عندنا ليها حكاية، وكل طبق بيتعمل بإيدين بتحب الأكل وبتحترم أصوله.</p>
+          <div class="story-points"><span><i aria-hidden="true">✓</i> مكونات طازة يوميًا</span><span><i aria-hidden="true">✓</i> وصفات مصرية على أصولها</span></div>
+          <a class="text-link" href="#menu">جرّب أكلنا <span aria-hidden="true">←</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-banner">
+      <div class="container order-banner-inner">
+        <div><span class="eyebrow">اللمة الحلوة تبدأ بأكلة حلوة</span><h2>جعان؟ إحنا جاهزين.</h2><p>اختار أكلك المفضل وخليه في طريقه ليك.</p></div>
+        <a class="button button-light" href="#menu">اطلب من المنيو <span aria-hidden="true">←</span></a>
+        <span class="banner-spark" aria-hidden="true">✳</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#"><span class="brand-mark" aria-hidden="true">س</span><span class="brand-copy"><strong>سفرة ولمة</strong><small>أكل بيتي معمول بحب</small></span></a>
+        <p>أكل بيتي بطعم يفرّحك، معمول كل يوم من قلب مطبخنا.</p>
+      </div>
+      <div class="footer-column"><strong>مواعيدنا</strong><span>كل يوم من ١٢ ظهرًا</span><span>لحد ١٢ منتصف الليل</span></div>
+      <div class="footer-column"><strong>خليك قريب</strong><a href="#menu">المنيو والطلبات</a><a href="https://wa.me/" id="footer-whatsapp" target="_blank" rel="noopener noreferrer">واتساب</a></div>
+      <div class="footer-contact"><span class="footer-contact-icon" aria-hidden="true">⌖</span><span><strong>بنوصّل لحد عندك</strong><small>القاهرة الكبرى</small></span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year"></span> سفرة ولمة. كل الحقوق محفوظة.</span><span>معمول بحب في مصر <span aria-hidden="true">♥</span></span></div>
+  </footer>
+
+  <aside class="cart-bar" id="cart-bar" aria-label="سلة الطلب" hidden>
+    <div class="cart-bar-copy"><span class="cart-count" id="cart-count">٠</span><span><strong>طلبك</strong><small id="cart-bar-total">٠ ج.م</small></span></div>
+    <button class="button button-primary cart-open" id="open-cart" type="button">كمّل طلبك <span aria-hidden="true">←</span></button>
+  </aside>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <button class="dialog-close" id="close-dialog" type="button" aria-label="إغلاق">×</button>
+      <div class="dialog-header"><span class="eyebrow">بالهنا والشفا</span><h2 id="dialog-title">طلبك على وصول</h2><p>راجع طلبك وسيب لنا بيانات التوصيل.</p></div>
+      <div class="order-summary" id="order-summary"></div>
+      <div class="order-total"><span>الإجمالي شامل التوصيل</span><strong id="order-total">٠ ج.م</strong></div>
+      <form id="checkout-form">
+        <label class="field-label" for="customer-name">اسمك</label>
+        <input class="form-field" id="customer-name" name="name" type="text" autocomplete="name" placeholder="اكتب اسمك" required>
+        <label class="field-label" for="customer-phone">رقم موبايلك</label>
+        <input class="form-field" id="customer-phone" name="phone" type="tel" autocomplete="tel" placeholder="01xxxxxxxxx" required>
+        <fieldset class="delivery-options"><legend>تحب تستلم طلبك إزاي؟</legend><label><input type="radio" name="fulfillment" value="توصيل للعنوان" checked> توصيل للعنوان</label><label><input type="radio" name="fulfillment" value="استلام من المطعم"> استلام من المطعم</label></fieldset>
+        <div id="address-field"><label class="field-label" for="customer-address">عنوان التوصيل</label><input class="form-field" id="customer-address" name="address" type="text" autocomplete="street-address" placeholder="المنطقة، الشارع، رقم العمارة"></div>
+        <label class="field-label" for="order-notes">ملاحظات <span>(اختياري)</span></label>
+        <textarea class="form-field" id="order-notes" name="notes" rows="2" placeholder="أي تفاصيل تحب نعرفها؟"></textarea>
+        <p class="whatsapp-hint" id="whatsapp-hint" hidden></p>
+        <button class="button button-primary submit-order" type="submit">ابعت طلبك على واتساب <span aria-hidden="true">↗</span></button>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>
